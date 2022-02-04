@@ -5,7 +5,7 @@ public void setup()
 public void draw()
 {
   if(mousePressed == true){
-  background((int)(Math.random()*360));
+  background((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
   }
   sierpinski(0, 500, 500);
 }
