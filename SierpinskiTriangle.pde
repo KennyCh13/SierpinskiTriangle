@@ -5,7 +5,7 @@ public void setup()
 public void draw()
 {
   if(mousePressed == true){
-  background(0);
+  background((int)(Math.random()*360));
   }
   sierpinski(0, 500, 500);
 }
@@ -14,6 +14,7 @@ public void mouseDragged()//optional
 }
 public void sierpinski(int x, int y, int len) 
 {
+  fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
   if (len <= 25) {
     triangle(x, y, x + len, y, x + len/2, y - len);
   }
